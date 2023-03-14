@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris dataframe</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>sepal_length</th> 
+                <th>sepal_width</th>
+                <th>petal_length</th>
+                <th>petal_width</th>
+                <th>species</th>
+                <th>sepal_ratio</th>
+                <th>length_ratio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row.sepal_length }}</td>
+                    <td>{{ row.sepal_width }}</td>
+                    <td>{{ row.petal_length }}</td>
+                    <td>{{ row.petal_width }}</td>
+                    <td>{{ row.species }}</td>
+                    <td>{{ row.sepal_ratio }}</td>
+                    <td>{{ row.length_ratio }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
